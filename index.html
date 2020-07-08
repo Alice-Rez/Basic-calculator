@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="calculator">
+      <div class="display" id="display"></div>
+      <div class="calculator-body">
+          <button class="general" id="clear" onclick="clearing()">AC</button>
+          <button class="general" id="mark" onclick="markFunction()">+/-</button>
+          <button class="operation" id="%" onclick="operationFunction('%')">%</button>
+          <button class="operation" id="/"  onclick="operationFunction('/')">/</button>
+          <button class="number" onclick="number(7)">7</button>
+          <button class="number" onclick="number(8)">8</button>
+          <button class="number" onclick="number(9)">9</button>
+          <button class="operation" id="*"  onclick="operationFunction('*')">x</button>
+          <button class="number" onclick="number(4)">4</button>
+          <button class="number" onclick="number(5)">5</button>
+          <button class="number" onclick="number(6)">6</button>
+          <button class="operation" id="-"  onclick="operationFunction('-')">-</button>
+          <button class="number" onclick="number(1)">1</button>
+          <button class="number" onclick="number(2)">2</button>
+          <button class="number" onclick="number(3)">3</button>
+          <button class="operation" id="+"  onclick="operationFunction('+')">+</button>
+          <button class="number zero" onclick="number(0)">0</button>
+          <button class="number" id="decimal" onclick="decimal()">.</button>
+          <button class="operation" id="result" onclick="calculator()">=</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
