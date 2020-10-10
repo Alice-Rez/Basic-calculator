@@ -2,6 +2,8 @@
 
 ## Description
 
+[Live Demo](https://alice-rez.github.io/Basic-calculator/)
+
 Small project that was done during my web development course just after 9 days of learning Javascript. Calculator was designed just for using mouse, not keyboard, and do not use _eval_ method. Details:
 
 - Calculator has basic mathematic operations and modulo (placed at _%_ key)
