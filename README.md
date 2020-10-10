@@ -29,3 +29,5 @@ Small project that was done during my web development course just after 9 days o
 - operation and number 2 are nulled, number1 is assigned value of result as a string
 - decimal point is added to number just if the number does not include it already
 - clicking on _+/-_ key means multiplying number by -1
+
+**Note: In the time of publishing, just few minor changes were done. 95% of the code is from the time of original creation**
