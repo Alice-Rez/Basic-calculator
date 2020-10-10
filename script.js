@@ -39,28 +39,7 @@ function markFunction() {
 
 function operationFunction(input) {
   if (number2 !== "") {
-    number1 = parseFloat(number1);
-    number2 = parseFloat(number2);
-    switch (operation) {
-      case "+":
-        var resultBetween = number1 + number2;
-        break;
-      case "-":
-        resultBetween = number1 - number2;
-        break;
-      case "*":
-        resultBetween = number1 * number2;
-        break;
-      case "/":
-        resultBetween = number1 / number2;
-        break;
-      case "%":
-        resultBetween = number1 % number2;
-        break;
-      default:
-        resultBetween = "Error ";
-        break;
-    }
+    let resultBetween = getResult(number1, number2);
     document.getElementById("display").innerHTML = resultBetween;
     document.getElementById(`${operation}`).style.backgroundColor = "";
     number1 = `${resultBetween}`;
@@ -71,31 +50,7 @@ function operationFunction(input) {
 }
 
 function calculator() {
-  number1 = parseFloat(number1);
-  number2 = parseFloat(number2);
-  switch (operation) {
-    case "+":
-      resultFunction = number1 + number2;
-      break;
-    case "-":
-      resultFunction = number1 - number2;
-      break;
-    case "*":
-      resultFunction = number1 * number2;
-      break;
-    case "/":
-      resultFunction = number1 / number2;
-      break;
-    case "%":
-      resultFunction = number1 % number2;
-      break;
-    default:
-      resultFunction = "Error ";
-      break;
-  }
-  if (resultFunction.toString().length >= 12) {
-    resultFunction = resultFunction.toExponential(5);
-  }
+  resultFunction = getResult(number1, number2);
   document.getElementById("display").innerHTML = resultFunction;
   document.getElementById(`${operation}`).style.backgroundColor = "";
   number1 = `${resultFunction}`;
@@ -112,4 +67,34 @@ function clearing() {
   operation = "";
   resultFunction = 0;
   document.getElementById("display").innerHTML = "";
+}
+
+function getResult(number1, number2) {
+  number1 = parseFloat(number1);
+  number2 = parseFloat(number2);
+  switch (operation) {
+    case "+":
+      result = number1 + number2;
+      break;
+    case "-":
+      result = number1 - number2;
+      break;
+    case "*":
+      result = number1 * number2;
+      break;
+    case "/":
+      result = number1 / number2;
+      break;
+    case "%":
+      result = number1 % number2;
+      break;
+    default:
+      result = "Error ";
+      break;
+  }
+  if (result.toString().length >= 12) {
+    result = result.toExponential(5);
+  }
+
+  return result;
 }
