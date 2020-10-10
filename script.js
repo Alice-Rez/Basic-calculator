@@ -50,8 +50,12 @@ function operationFunction(input) {
 }
 
 function calculator() {
-  resultFunction = getResult(number1, number2);
-  document.getElementById("display").innerHTML = resultFunction;
+  if (number2 !== "") {
+    resultFunction = getResult(number1, number2);
+    document.getElementById("display").innerHTML = resultFunction;
+  } else {
+    resultFunction = number1;
+  }
   document.getElementById(`${operation}`).style.backgroundColor = "";
   number1 = `${resultFunction}`;
   number2 = "";
