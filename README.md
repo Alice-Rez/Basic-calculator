@@ -2,6 +2,8 @@
 
 ## Description
 
+<img align="right" src="./calculator.png" width="20%">
+
 [Live Demo](https://alice-rez.github.io/Basic-calculator/)
 
 Small project that was done during my web development course just after 9 days of learning Javascript. Calculator was designed just for using mouse, not keyboard, and do not use _eval_ method. Details:
