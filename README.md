@@ -2,7 +2,7 @@
 
 ## Description
 
-<img align="right" src="./calculator.png" width="20%">
+<img align="right" src="./calculator.png" width="40%">
 
 [Live Demo](https://alice-rez.github.io/Basic-calculator/)
 
